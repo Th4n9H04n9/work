@@ -1,0 +1,659 @@
+#,CVE ID,CWE ID,# of Exploits,Vulnerability Type(s),Publish Date,Update Date,Score,Gained Access Level,Access,Complexity,Authentication,Conf.,Integ.,Avail.,Description
+1,CVE-2022-35628,89,,Sql,2022-07-12,2022-07-27,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	A SQL injection issue was discovered in the lux extension before 17.6.1, and 18.x through 24.x before 24.0.2, for TYPO3.
+"
+2,CVE-2022-35414,908,,,2022-07-11,2022-09-07,6.1,None,Local,Low,Not required,Partial,Partial,"Complete	** DISPUTED ** softmmu/physmem.c in QEMU through 7.0.0 can perform an uninitialized read on the translate_fail path, leading to an io_readx or io_writex crash. NOTE: a third party states that the Non-virtualization Use Case in the qemu.org reference applies here, i.e., ""Bugs affecting the non-virtualization use case are not considered security bugs at this time.""
+"
+3,CVE-2022-35411,,,Exec Code,2022-07-08,2022-07-29,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	rpc.py through 0.6.0 allows Remote Code Execution because an unpickle occurs when the ""serializer: pickle"" HTTP header is sent. In other words, although JSON (not Pickle) is the default data format, an unauthenticated client can cause the data to be processed with unpickle.
+"
+4,CVE-2022-35228,,,,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	SAP BusinessObjects CMC allows an unauthenticated attacker to retrieve token information over the network which would otherwise be restricted. This can be achieved only when a legitimate user accesses the application and a local compromise occurs, like sniffing or social engineering. On successful exploitation, the attacker can completely compromise the application.
+"
+5,CVE-2022-35169,200,,+Info,2022-07-12,2022-07-20,6.5,None,Remote,Low,???,Partial,Partial,"Partial	SAP BusinessObjects Business Intelligence Platform (LCM) - versions 420, 430, allows an attacker with an admin privilege to read and decrypt LCMBIAR file's password under certain conditions, enabling the attacker to modify the password or import the file into another system causing high impact on confidentiality but a limited impact on the availability and integrity of the application.
+"
+6,CVE-2022-34972,89,,Sql,2022-07-05,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	So Filter Shop v3.x was discovered to contain multiple blind SQL injection vulnerabilities via the att_value_id , manu_value_id , opt_value_id , and subcate_value_id parameters at /index.php?route=extension/module/so_filter_shop_by/filter_data.
+"
+7,CVE-2022-34918,843,,Overflow,2022-07-04,2022-09-28,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	An issue was discovered in the Linux kernel through 5.18.9. A type confusion bug in nft_set_elem_init (leading to a buffer overflow) could be used by a local attacker to escalate privileges, a different vulnerability than CVE-2022-32250. (The attacker can obtain root access, but must start with an unprivileged user namespace to obtain CAP_NET_ADMIN access.) This can be fixed in nft_setelem_parse_data in net/netfilter/nf_tables_api.c.
+"
+8,CVE-2022-34914,74,,,2022-07-08,2022-07-16,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Webswing before 22.1.3 allows X-Forwarded-For header injection. The client IP address is associated with a variable in the configuration page. The {clientIp} variable can be used as an application startup argument. The X-Forwarded-For header can be manipulated by a client to store an arbitrary value that is used to replace the clientIp variable (without sanitization). A client can thus inject multiple arguments into the session startup. Systems that do not use the clientIP variable in the configuration are not vulnerable. The vulnerability is fixed in these versions: 20.1.16, 20.2.19, 21.1.8, 21.2.12, and 22.1.3.
+"
+9,CVE-2022-34913,787,,Overflow,2022-07-02,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	** DISPUTED ** md2roff 1.7 has a stack-based buffer overflow via a Markdown file containing a large number of consecutive characters to be processed. NOTE: the vendor's position is that the product is not intended for untrusted input.
+"
+10,CVE-2022-34878,89,,Sql,2022-07-05,2022-07-13,9.0,None,Remote,Low,???,Complete,Complete,"Complete	SQL Injection vulnerability in User Stats interface (/vicidial/user_stats.php) of VICIdial via the file_download parameter allows attacker to spoof identity, tamper with existing data, allow the complete disclosure of all data on the system, destroy the data or make it otherwise unavailable, and become administrators of the database server.
+"
+11,CVE-2022-34877,89,,Sql,2022-07-05,2022-07-13,9.0,None,Remote,Low,???,Complete,Complete,"Complete	SQL Injection vulnerability in AST Agent Time Sheet interface ((/vicidial/AST_agent_time_sheet.php) of VICIdial via the agent parameter allows attacker to spoof identity, tamper with existing data, allow the complete disclosure of all data on the system, destroy the data or make it otherwise unavailable, and become administrators of the database server. This issue affects: VICIdial 2.14b0.5 versions prior to 3555.
+"
+12,CVE-2022-34876,89,,Sql,2022-07-05,2022-07-13,8.5,None,Remote,Medium,???,Complete,Complete,"Complete	SQL Injection vulnerability in admin interface (/vicidial/admin.php) of VICIdial via modify_email_accounts, access_recordings, and agentcall_email parameters allows attacker to spoof identity, tamper with existing data, allow the complete disclosure of all data on the system, destroy the data or make it otherwise unavailable, and become administrators of the database server. This issue affects: VICIdial 2.14b0.5 versions prior to 3555.
+"
+13,CVE-2022-34821,94,,Exec Code,2022-07-12,2022-08-10,9.3,None,Remote,Medium,Not required,Complete,Complete,"Complete	A vulnerability has been identified in SIMATIC CP 1242-7 V2 (All versions < V3.3.46), SIMATIC CP 1243-1 (All versions < V3.3.46), SIMATIC CP 1243-7 LTE EU (All versions < V3.3.46), SIMATIC CP 1243-7 LTE US (All versions < V3.3.46), SIMATIC CP 1243-8 IRC (All versions < V3.3.46), SIMATIC CP 1542SP-1 IRC (All versions >= V2.0), SIMATIC CP 1543-1 (All versions < V3.0.22), SIMATIC CP 1543SP-1 (All versions >= V2.0), SIPLUS ET 200SP CP 1542SP-1 IRC TX RAIL (All versions >= V2.0), SIPLUS ET 200SP CP 1543SP-1 ISEC (All versions >= V2.0), SIPLUS ET 200SP CP 1543SP-1 ISEC TX RAIL (All versions >= V2.0), SIPLUS NET CP 1242-7 V2 (All versions < V3.3.46), SIPLUS NET CP 1543-1 (All versions < V3.0.22), SIPLUS S7-1200 CP 1243-1 (All versions < V3.3.46), SIPLUS S7-1200 CP 1243-1 RAIL (All versions < V3.3.46). By injecting code to specific configuration options for OpenVPN, an attacker could execute arbitrary code with elevated privileges.
+"
+14,CVE-2022-34820,77,,Exec Code,2022-07-12,2022-08-10,9.3,None,Remote,Medium,Not required,Complete,Complete,"Complete	A vulnerability has been identified in SIMATIC CP 1242-7 V2 (All versions < V3.3.46), SIMATIC CP 1243-1 (All versions < V3.3.46), SIMATIC CP 1243-7 LTE EU (All versions < V3.3.46), SIMATIC CP 1243-7 LTE US (All versions < V3.3.46), SIMATIC CP 1243-8 IRC (All versions < V3.3.46), SIMATIC CP 1542SP-1 IRC (All versions >= V2.0), SIMATIC CP 1543-1 (All versions < V3.0.22), SIMATIC CP 1543SP-1 (All versions >= V2.0), SIPLUS ET 200SP CP 1542SP-1 IRC TX RAIL (All versions >= V2.0), SIPLUS ET 200SP CP 1543SP-1 ISEC (All versions >= V2.0), SIPLUS ET 200SP CP 1543SP-1 ISEC TX RAIL (All versions >= V2.0), SIPLUS NET CP 1242-7 V2 (All versions < V3.3.46), SIPLUS NET CP 1543-1 (All versions < V3.0.22), SIPLUS S7-1200 CP 1243-1 (All versions < V3.3.46), SIPLUS S7-1200 CP 1243-1 RAIL (All versions < V3.3.46). The application does not correctly escape some user provided fields during the authentication process. This could allow an attacker to inject custom commands and execute arbitrary code with elevated privileges.
+"
+15,CVE-2022-34819,787,,Exec Code Overflow,2022-07-12,2022-08-10,9.3,None,Remote,Medium,Not required,Complete,Complete,"Complete	A vulnerability has been identified in SIMATIC CP 1242-7 V2 (All versions < V3.3.46), SIMATIC CP 1243-1 (All versions < V3.3.46), SIMATIC CP 1243-7 LTE EU (All versions < V3.3.46), SIMATIC CP 1243-7 LTE US (All versions < V3.3.46), SIMATIC CP 1243-8 IRC (All versions < V3.3.46), SIMATIC CP 1542SP-1 IRC (All versions >= V2.0), SIMATIC CP 1543-1 (All versions < V3.0.22), SIMATIC CP 1543SP-1 (All versions >= V2.0), SIPLUS ET 200SP CP 1542SP-1 IRC TX RAIL (All versions >= V2.0), SIPLUS ET 200SP CP 1543SP-1 ISEC (All versions >= V2.0), SIPLUS ET 200SP CP 1543SP-1 ISEC TX RAIL (All versions >= V2.0), SIPLUS NET CP 1242-7 V2 (All versions < V3.3.46), SIPLUS NET CP 1543-1 (All versions < V3.0.22), SIPLUS S7-1200 CP 1243-1 (All versions < V3.3.46), SIPLUS S7-1200 CP 1243-1 RAIL (All versions < V3.3.46). The application lacks proper validation of user-supplied data when parsing specific messages. This could result in a heap-based buffer overflow. An attacker could leverage this vulnerability to execute code in the context of device.
+"
+16,CVE-2022-34748,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in Simcenter Femap (All versions < V2022.2). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted X_T files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-17293)
+"
+17,CVE-2022-34737,276,,,2022-07-12,2022-07-19,6.4,None,Remote,Low,Not required,Partial,Partial,"None	The application security module has a vulnerability in permission assignment. Successful exploitation of this vulnerability may affect data integrity and confidentiality.
+"
+18,CVE-2022-34736,476,,,2022-07-12,2022-07-19,7.8,None,Remote,Low,Not required,None,None,"Complete	The frame scheduling module has a null pointer dereference vulnerability. Successful exploitation of this vulnerability will affect the kernel availability.
+"
+19,CVE-2022-34735,476,,,2022-07-12,2022-07-19,7.8,None,Remote,Low,Not required,None,None,"Complete	The frame scheduling module has a null pointer dereference vulnerability. Successful exploitation of this vulnerability will affect the kernel availability.
+"
+20,CVE-2022-34663,94,,,2022-07-12,2022-08-10,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	A vulnerability has been identified in RUGGEDCOM ROS M2100 (All versions), RUGGEDCOM ROS M2200 (All versions), RUGGEDCOM ROS M969 (All versions), RUGGEDCOM ROS RMC30 (All versions), RUGGEDCOM ROS RMC8388 (All versions < V5.6.0), RUGGEDCOM ROS RP110 (All versions), RUGGEDCOM ROS RS1600 (All versions), RUGGEDCOM ROS RS1600F (All versions), RUGGEDCOM ROS RS1600T (All versions), RUGGEDCOM ROS RS400 (All versions), RUGGEDCOM ROS RS401 (All versions), RUGGEDCOM ROS RS416 (All versions), RUGGEDCOM ROS RS416v2 (All versions < V5.6.0), RUGGEDCOM ROS RS8000 (All versions), RUGGEDCOM ROS RS8000A (All versions), RUGGEDCOM ROS RS8000H (All versions), RUGGEDCOM ROS RS8000T (All versions), RUGGEDCOM ROS RS900 (All versions), RUGGEDCOM ROS RS900 (32M) (All versions < V5.6.0), RUGGEDCOM ROS RS900G (All versions), RUGGEDCOM ROS RS900G (32M) (All versions < V5.6.0), RUGGEDCOM ROS RS900GP (All versions), RUGGEDCOM ROS RS900L (All versions), RUGGEDCOM ROS RS900W (All versions), RUGGEDCOM ROS RS910 (All versions), RUGGEDCOM ROS RS910L (All versions), RUGGEDCOM ROS RS910W (All versions), RUGGEDCOM ROS RS920L (All versions), RUGGEDCOM ROS RS920W (All versions), RUGGEDCOM ROS RS930L (All versions), RUGGEDCOM ROS RS930W (All versions), RUGGEDCOM ROS RS940G (All versions), RUGGEDCOM ROS RS969 (All versions), RUGGEDCOM ROS RSG2100 (All versions), RUGGEDCOM ROS RSG2100 (32M) (All versions < V5.6.0), RUGGEDCOM ROS RSG2100P (All versions), RUGGEDCOM ROS RSG2200 (All versions), RUGGEDCOM ROS RSG2288 (All versions < V5.6.0), RUGGEDCOM ROS RSG2300 (All versions < V5.6.0), RUGGEDCOM ROS RSG2300P (All versions < V5.6.0), RUGGEDCOM ROS RSG2488 (All versions < V5.6.0), RUGGEDCOM ROS RSG907R (All versions < V5.6.0), RUGGEDCOM ROS RSG908C (All versions < V5.6.0), RUGGEDCOM ROS RSG909R (All versions < V5.6.0), RUGGEDCOM ROS RSG910C (All versions < V5.6.0), RUGGEDCOM ROS RSG920P (All versions < V5.6.0), RUGGEDCOM ROS RSL910 (All versions < V5.6.0), RUGGEDCOM ROS RST2228 (All versions < V5.6.0), RUGGEDCOM ROS RST2228P (All versions < V5.6.0), RUGGEDCOM ROS RST916C (All versions < V5.6.0), RUGGEDCOM ROS RST916P (All versions < V5.6.0), RUGGEDCOM ROS i800 (All versions), RUGGEDCOM ROS i801 (All versions), RUGGEDCOM ROS i802 (All versions), RUGGEDCOM ROS i803 (All versions). Affected devices are vulnerable to a web-based code injection attack via the console. An attacker could exploit this vulnerability to inject code into the web server and cause malicious behavior in legitimate users accessing certain web resources on the affected device.
+"
+21,CVE-2022-34598,,,Exec Code,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The udpserver in H3C Magic R100 V200R004 and V100R005 has the 9034 port opened, allowing attackers to execute arbitrary commands.
+"
+22,CVE-2022-34597,77,,,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Tenda AX1806 v1.0.0.1 was discovered to contain a command injection vulnerability via the function WanParameterSetting.
+"
+23,CVE-2022-34596,77,,,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Tenda AX1803 v1.0.0.1_2890 was discovered to contain a command injection vulnerability via the function WanParameterSetting.
+"
+24,CVE-2022-34595,77,,,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Tenda AX1803 v1.0.0.1_2890 was discovered to contain a command injection vulnerability via the function setipv6status.
+"
+25,CVE-2022-34592,77,,Exec Code,2022-07-07,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Wavlink WL-WN575A3 RPT75A3.V4300.201217 was discovered to contain a command injection vulnerability via the function obtw. This vulnerability allows attackers to execute arbitrary commands via a crafted POST request.
+"
+26,CVE-2022-34465,125,,Exec Code,2022-07-12,2022-09-13,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in Parasolid V33.1 (All versions < V33.1.264), Parasolid V34.0 (All versions < V34.0.250), Parasolid V34.1 (All versions < V34.1.233), Simcenter Femap V2022.1 (All versions < V2022.1.3), Simcenter Femap V2022.2 (All versions < V2022.2.2). The affected application contains an out of bounds read past the end of an allocated structure while parsing specially crafted NEU files. This could allow an attacker to execute code in the context of the current process. (ZDI-CAN-15420)
+"
+27,CVE-2022-34289,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-054)
+"
+28,CVE-2022-34286,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-051)
+"
+29,CVE-2022-34284,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-049)
+"
+30,CVE-2022-34281,125,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application is vulnerable to an out of bounds read past the end of an allocated buffer when parsing PCB files. An attacker could leverage this vulnerability to execute code in the context of the current process. (FG-VD-22-046)
+"
+31,CVE-2022-34280,125,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application is vulnerable to an out of bounds read past the end of an allocated buffer when parsing PCB files. An attacker could leverage this vulnerability to execute code in the context of the current process. (FG-VD-22-045)
+"
+32,CVE-2022-34279,125,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application is vulnerable to an out of bounds read past the end of an allocated buffer when parsing PCB files. An attacker could leverage this vulnerability to execute code in the context of the current process. (FG-VD-22-044)
+"
+33,CVE-2022-34278,125,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application is vulnerable to an out of bounds read past the end of an allocated buffer when parsing PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-043)
+"
+34,CVE-2022-34277,125,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application is vulnerable to an out of bounds read past the end of an allocated buffer when parsing PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-042)
+"
+35,CVE-2022-34276,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-041)
+"
+36,CVE-2022-34275,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-040)
+"
+37,CVE-2022-34274,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-039)
+"
+38,CVE-2022-34273,787,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application contains an out of bounds write past the end of an allocated structure while parsing specially crafted PCB files. This could allow an attacker to execute code in the context of the current process. (FG-VD-22-038)
+"
+39,CVE-2022-34272,125,,Exec Code,2022-07-12,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	A vulnerability has been identified in PADS Standard/Plus Viewer (All versions). The affected application is vulnerable to an out of bounds read past the end of an allocated buffer when parsing PCB files. An attacker could leverage this vulnerability to execute code in the context of the current process. (FG-VD-22-037, FG-VD-22-059)
+"
+40,CVE-2022-34265,89,,Sql,2022-07-04,2022-08-18,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	An issue was discovered in Django 3.2 before 3.2.14 and 4.0 before 4.0.6. The Trunc() and Extract() database functions are subject to SQL injection if untrusted data is used as a kind/lookup_name value. Applications that constrain the lookup name and kind choice to a known safe list are unaffected.
+"
+41,CVE-2022-34151,294,,,2022-07-04,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Use of hard-coded credentials vulnerability exists in Machine automation controller NJ series all models V 1.48 and earlier, Machine automation controller NX7 series all models V1.28 and earlier, Machine automation controller NX1 series all models V1.48 and earlier, Automation software 'Sysmac Studio' all models V1.49 and earlier, and Programmable Terminal (PT) NA series NA5-15W/NA5-12W/NA5-9W/NA5-7W models Runtime V1.15 and earlier, which may allow a remote attacker who successfully obtained the user credentials by analyzing the affected product to access the controller.
+"
+42,CVE-2022-33996,276,,,2022-07-07,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Incorrect permission management in Devolutions Server before 2022.2 allows a new user with a preexisting username to inherit the permissions of that previous user.
+"
+43,CVE-2022-33980,,,Exec Code,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Apache Commons Configuration performs variable interpolation, allowing properties to be dynamically evaluated and expanded. The standard format for interpolation is ""${prefix:name}"", where ""prefix"" is used to locate an instance of org.apache.commons.configuration2.interpol.Lookup that performs the interpolation. Starting with version 2.4 and continuing through 2.7, the set of default Lookup instances included interpolators that could result in arbitrary code execution or contact with remote servers. These lookups are: - ""script"" - execute expressions using the JVM script execution engine (javax.script) - ""dns"" - resolve dns records - ""url"" - load values from urls, including from remote servers Applications using the interpolation defaults in the affected versions may be vulnerable to remote code execution or unintentional contact with remote servers if untrusted configuration values are used. Users are recommended to upgrade to Apache Commons Configuration 2.8.0, which disables the problematic interpolators by default.
+"
+44,CVE-2022-33948,78,,Exec Code,2022-07-04,2022-07-15,8.3,None,Local Network,Low,Not required,Complete,Complete,"Complete	HOME SPOT CUBE2 V102 contains an OS command injection vulnerability due to improper processing of data received from DHCP server. An adjacent attacker may execute an arbitrary OS command on the product if a malicious DHCP server is placed on the WAN side of the product.
+"
+45,CVE-2022-33936,,,,2022-07-07,2022-07-15,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	Cloud Mobility for Dell EMC Storage, 1.3.0.XXX contains a RCE vulnerability. A non-privileged user could potentially exploit this vulnerability, leading to achieving a root shell. This is a critical issue; so Dell recommends customers to upgrade at the earliest opportunity.
+"
+46,CVE-2022-33710,269,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Improper input validation vulnerability in BillingPackageInsraller in Galaxy Store prior to version 4.5.41.8 allows local attackers to launch activities as Galaxy Store privilege.
+"
+47,CVE-2022-33709,269,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Improper input validation vulnerability in ApexPackageInstaller in Galaxy Store prior to version 4.5.41.8 allows local attackers to launch activities as Galaxy Store privilege.
+"
+48,CVE-2022-33708,269,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Improper input validation vulnerability in AppsPackageInstaller in Galaxy Store prior to version 4.5.41.8 allows local attackers to launch activities as Galaxy Store privilege.
+"
+49,CVE-2022-33678,,,Exec Code,2022-07-12,2022-08-30,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Azure Site Recovery Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-33676.
+"
+50,CVE-2022-33677,,,,2022-07-12,2022-07-27,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Azure Site Recovery Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-30181, CVE-2022-33641, CVE-2022-33642, CVE-2022-33643, CVE-2022-33650, CVE-2022-33651, CVE-2022-33652, CVE-2022-33653, CVE-2022-33654, CVE-2022-33655, CVE-2022-33656, CVE-2022-33657, CVE-2022-33658, CVE-2022-33659, CVE-2022-33660, CVE-2022-33661, CVE-2022-33662, CVE-2022-33663, CVE-2022-33664, CVE-2022-33665, CVE-2022-33666, CVE-2022-33667, CVE-2022-33668, CVE-2022-33669, CVE-2022-33671, CVE-2022-33672, CVE-2022-33673, CVE-2022-33674, CVE-2022-33675.
+"
+51,CVE-2022-33676,,,Exec Code,2022-07-12,2022-08-30,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Azure Site Recovery Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-33678.
+"
+52,CVE-2022-33633,,,Exec Code,2022-07-12,2022-07-20,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Skype for Business and Lync Remote Code Execution Vulnerability.
+"
+53,CVE-2022-33208,294,,Bypass,2022-07-04,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Authentication bypass by capture-replay vulnerability exists in Machine automation controller NJ series all models V 1.48 and earlier, Machine automation controller NX7 series all models V1.28 and earlier, Machine automation controller NX1 series all models V1.48 and earlier, Automation software 'Sysmac Studio' all models V1.49 and earlier, and Programmable Terminal (PT) NA series NA5-15W/NA5-12W/NA5-9W/NA5-7W models Runtime V1.15 and earlier, which may allow a remote attacker who can analyze the communication between the affected controller and automation software 'Sysmac Studio' and/or a Programmable Terminal (PT) to access the controller.
+"
+54,CVE-2022-33171,89,,Sql,2022-07-04,2022-08-16,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	** DISPUTED ** The findOne function in TypeORM before 0.3.0 can either be supplied with a string or a FindOneOptions object. When input to the function is a user-controlled parsed JSON object, supplying a crafted FindOneOptions instead of an id string leads to SQL injection. NOTE: the vendor's position is that the user's application is responsible for input validation.
+"
+55,CVE-2022-33137,613,,,2022-07-12,2022-07-15,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	A vulnerability has been identified in SIMATIC MV540 H (All versions < V3.3), SIMATIC MV540 S (All versions < V3.3), SIMATIC MV550 H (All versions < V3.3), SIMATIC MV550 S (All versions < V3.3), SIMATIC MV560 U (All versions < V3.3), SIMATIC MV560 X (All versions < V3.3). The web session management of affected devices does not invalidate session ids in certain logout scenarios. This could allow an authenticated remote attacker to hijack other users' sessions.
+"
+56,CVE-2022-33047,787,,Overflow,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	OTFCC v0.10.4 was discovered to contain a heap buffer overflow after free via otfccbuild.c.
+"
+57,CVE-2022-33011,74,,,2022-07-08,2022-07-21,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Known v1.3.1+2020120201 was discovered to allow attackers to perform an account takeover via a host header injection attack.
+"
+58,CVE-2022-32533,,,XSS CSRF,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	** UNSUPPORTED WHEN ASSIGNED ** Apache Jetspeed-2 does not sufficiently filter untrusted user input by default leading to a number of issues including XSS, CSRF, XXE, and SSRF. Setting the configuration option ""xss.filter.post = true"" may mitigate these issues. NOTE: Apache Jetspeed is a dormant project of Apache Portals and no updates will be provided for this issue.
+"
+59,CVE-2022-32481,269,,,2022-07-07,2022-07-15,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Dell PowerProtect Cyber Recovery, versions prior to 19.11, contain a privilege escalation vulnerability on virtual appliance deployments. A lower-privileged authenticated user can chain docker commands to escalate privileges to root leading to complete system takeover.
+"
+60,CVE-2022-32449,77,,,2022-07-07,2022-07-15,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	TOTOLINK EX300_V2 V4.0.3c.7484 was discovered to contain a command injection vulnerability via the langType parameter in the setLanguageCfg function. This vulnerability is exploitable via a crafted MQTT data packet.
+"
+61,CVE-2022-32434,787,,Overflow,2022-07-15,2022-07-19,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	EIPStackGroup OpENer v2.3.0 was discovered to contain a stack overflow via /bin/posix/src/ports/POSIX/OpENer+0x56073d.
+"
+62,CVE-2022-32420,,,Exec Code,2022-07-01,2022-07-09,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	College Management System v1.0 was discovered to contain a remote code execution (RCE) vulnerability via /College/admin/teacher.php. This vulnerability is exploited via a crafted PHP file.
+"
+63,CVE-2022-32417,94,,Exec Code,2022-07-14,2022-07-18,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	PbootCMS v3.1.2 was discovered to contain a remote code execution (RCE) vulnerability via the function parserIfLabel at function.php.
+"
+64,CVE-2022-32416,89,,Sql,2022-07-14,2022-07-18,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Product Show Room Site v1.0 is vulnerable to SQL Injection via /psrs/classes/Master.php?f=delete_product.
+"
+65,CVE-2022-32415,89,,Sql,2022-07-14,2022-07-18,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Product Show Room Site v1.0 is vulnerable to SQL Injection via /psrs/?p=products/view_product&id=.
+"
+66,CVE-2022-32413,434,,Exec Code,2022-07-05,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	An arbitrary file upload vulnerability in Dice v4.2.0 allows attackers to execute arbitrary code via a crafted file.
+"
+67,CVE-2022-32412,,,,2022-07-01,2022-07-13,6.5,None,Remote,Low,???,Partial,Partial,"Partial	An issue in the /template/edit component of HongCMS v3.0 allows attackers to getshell.
+"
+68,CVE-2022-32411,,,,2022-07-01,2022-07-13,6.5,None,Remote,Low,???,Partial,Partial,"Partial	An issue in the languages config file of HongCMS v3.0 allows attackers to getshell.
+"
+69,CVE-2022-32386,787,,Overflow,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Tenda AC23 v16.03.07.44 was discovered to contain a buffer overflow via fromAdvSetMacMtuWan.
+"
+70,CVE-2022-32385,787,,Exec Code Overflow,2022-07-06,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Tenda AC23 v16.03.07.44 is vulnerable to Stack Overflow that will allow for the execution of arbitrary code (remote).
+"
+71,CVE-2022-32383,787,,Overflow,2022-07-06,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Tenda AC23 v16.03.07.44 was discovered to contain a stack overflow via the AdvSetMacMtuWan function.
+"
+72,CVE-2022-32324,787,,Overflow,2022-07-01,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	PDFAlto v0.4 was discovered to contain a heap buffer overflow via the component /pdfalto/src/pdfalto.cc.
+"
+73,CVE-2022-32323,787,,Overflow,2022-07-14,2022-09-12,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	AutoTrace v0.40.0 was discovered to contain a heap overflow via the ReadImage function at input-bmp.c:660.
+"
+74,CVE-2022-32311,89,,Sql,2022-07-05,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Ingredient Stock Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /isms/admin/stocks/view_stock.php.
+"
+75,CVE-2022-32310,77,,,2022-07-05,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	An access control issue in Ingredient Stock Management System v1.0 allows attackers to take over user accounts via a crafted POST request to /isms/classes/Users.php.
+"
+76,CVE-2022-32295,863,,,2022-07-01,2022-07-21,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	On Ampere Altra and AltraMax devices before SRP 1.09, the Altra reference design of UEFI accesses allows insecure access to SPI-NOR by the OS/hypervisor component.
+"
+77,CVE-2022-32294,863,,,2022-07-11,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Zimbra Collaboration Open Source 8.8.15 does not encrypt the initial-login randomly created password (from the ""zmprove ca"" command). It is visible in cleartext on port UDP 514 (aka the syslog port).
+"
+78,CVE-2022-32284,330,,,2022-07-04,2022-07-11,7.8,None,Remote,Low,Not required,None,None,"Complete	Use of insufficiently random values vulnerability exists in Vnet/IP communication module VI461 of YOKOGAWA Wide Area Communication Router (WAC Router) AW810D, which may allow a remote attacker to cause denial-of-service (DoS) condition by sending a specially crafted packet.
+"
+79,CVE-2022-32207,276,,,2022-07-07,2022-09-16,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	When curl < 7.84.0 saves cookies, alt-svc and hsts data to local files, it makes the operation atomic by finalizing the operation with a rename from a temporary name to the final target file name.In that rename operation, it might accidentally *widen* the permissions for the target file, leaving the updated file accessible to more users than intended.
+"
+80,CVE-2022-32114,434,,Exec Code,2022-07-13,2022-07-25,6.5,None,Remote,Low,???,Partial,Partial,"Partial	An unrestricted file upload vulnerability in the Add New Assets function of Strapi v4.1.12 allows attackers to execute arbitrary code via a crafted file.
+"
+81,CVE-2022-32095,89,,Sql,2022-07-01,2022-07-09,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the editid parameter at orders.php.
+"
+82,CVE-2022-32094,89,,Sql,2022-07-01,2022-07-09,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the loginid parameter at doctorlogin.php.
+"
+83,CVE-2022-32093,89,,Sql,2022-07-01,2022-07-08,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Hospital Management System v1.0 was discovered to contain a SQL injection vulnerability via the loginid parameter at adminlogin.php.
+"
+84,CVE-2022-32081,416,,,2022-07-01,2022-08-26,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	MariaDB v10.4 to v10.7 was discovered to contain an use-after-poison in prepare_inplace_add_virtual at /storage/innobase/handler/handler0alter.cc.
+"
+85,CVE-2022-32073,190,,Overflow,2022-07-13,2022-07-26,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	WolfSSH v1.4.7 was discovered to contain an integer overflow via the function wolfSSH_SFTP_RecvRMDIR.
+"
+86,CVE-2022-32058,835,,DoS,2022-07-07,2022-07-18,7.8,None,Remote,Low,Not required,None,None,"Complete	An infinite loop in the function httpRpmPass of TP-Link TL-WR741N/TL-WR742N V1/V2/V3_130415 allows attackers to cause a Denial of Service (DoS) via a crafted packet.
+"
+87,CVE-2022-32056,89,,Sql,2022-07-07,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Online Accreditation Management v1.0 was discovered to contain a SQL injection vulnerability via the USERNAME parameter at process.php.
+"
+88,CVE-2022-32054,94,,Exec Code,2022-07-07,2022-07-15,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	Tenda AC10 US_AC10V1.0RTL_V15.03.06.26_multi_TD01 was discovered to contain a remote code execution (RCE) vulnerability via the lanIp parameter.
+"
+89,CVE-2022-32036,787,,Overflow,2022-07-01,2022-07-09,7.8,None,Remote,Low,Not required,None,None,"Complete	Tenda M3 V1.0.0.12 was discovered to contain multiple stack overflow vulnerabilities via the ssidList, storeName, and trademark parameters in the function formSetStoreWeb.
+"
+90,CVE-2022-32035,119,,Overflow,2022-07-01,2022-07-09,7.8,None,Remote,Low,Not required,None,None,"Complete	Tenda M3 V1.0.0.12 was discovered to contain a stack overflow via the function formMasterMng.
+"
+91,CVE-2022-32034,119,,Overflow,2022-07-01,2022-07-09,7.8,None,Remote,Low,Not required,None,None,"Complete	Tenda M3 V1.0.0.12 was discovered to contain a stack overflow via the items parameter in the function formdelMasteraclist.
+"
+92,CVE-2022-32033,119,,Overflow,2022-07-01,2022-07-09,7.8,None,Remote,Low,Not required,None,None,"Complete	Tenda AX1806 v1.0.0.1 was discovered to contain a stack overflow via the function formSetVirtualSer.
+"
+93,CVE-2022-32032,787,,Overflow,2022-07-01,2022-07-09,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	Tenda AX1806 v1.0.0.1 was discovered to contain a stack overflow via the deviceList parameter in the function formAddMacfilterRule.
+"
+94,CVE-2022-32031,119,,Overflow,2022-07-01,2022-07-09,7.8,None,Remote,Low,Not required,None,None,"Complete	Tenda AX1806 v1.0.0.1 was discovered to contain a stack overflow via the list parameter in the function fromSetRouteStatic.
+"
+95,CVE-2022-32030,119,,Overflow,2022-07-01,2022-07-09,7.8,None,Remote,Low,Not required,None,None,"Complete	Tenda AX1806 v1.0.0.1 was discovered to contain a stack overflow via the list parameter in the function formSetQosBand.
+"
+96,CVE-2022-31943,434,,,2022-07-01,2022-07-11,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	MCMS v5.2.8 was discovered to contain an arbitrary file upload vulnerability.
+"
+97,CVE-2022-31856,89,,Sql,2022-07-05,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Newsletter Module v3.x was discovered to contain a SQL injection vulnerability via the zemez_newsletter_email parameter at /index.php.
+"
+98,CVE-2022-31854,434,,,2022-07-07,2022-07-21,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Codoforum v5.1 was discovered to contain an arbitrary file upload vulnerability via the logo change option in the admin panel.
+"
+99,CVE-2022-31836,22,,Dir. Trav.,2022-07-05,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The leafInfo.match() function in Beego v2.0.3 and below uses path.join() to deal with wildcardvalues which can lead to cross directory risk.
+"
+100,CVE-2022-31605,502,,DoS Exec Code,2022-07-01,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	NVFLARE, versions prior to 2.1.2, contains a vulnerability in its utils module, where YAML files are loaded via yaml.load() instead of yaml.safe_load(). The deserialization of Untrusted Data, may allow an unprivileged network attacker to cause Remote Code Execution, Denial Of Service, and Impact to both Confidentiality and Integrity.
+"
+101,CVE-2022-31604,502,,DoS Exec Code,2022-07-01,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	NVFLARE, versions prior to 2.1.2, contains a vulnerability in its PKI implementation module, where The CA credentials are transported via pickle and no safe deserialization. The deserialization of Untrusted Data may allow an unprivileged network attacker to cause Remote Code Execution, Denial Of Service, and Impact to both Confidentiality and Integrity.
+"
+102,CVE-2022-31593,74,,Exec Code,2022-07-12,2022-07-16,6.5,None,Remote,Low,???,Partial,Partial,"Partial	SAP Business One client - version 10.0 allows an attacker with low privileges, to inject code that can be executed by the application. An attacker could thereby control the behavior of the application.
+"
+103,CVE-2022-31588,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The zippies/testplatform repository through 2016-07-19 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+104,CVE-2022-31587,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The yuriyouzhou/KG-fashion-chatbot repository through 2018-05-22 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+105,CVE-2022-31586,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The unizar-30226-2019-06/ChangePop-Back repository through 2019-06-04 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+106,CVE-2022-31585,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The umeshpatil-dev/Home__internet repository through 2020-08-28 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+107,CVE-2022-31584,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The stonethree/s3label repository through 2019-08-14 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+108,CVE-2022-31583,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The sravaniboinepelli/AutomatedQuizEval repository through 2020-04-27 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+109,CVE-2022-31582,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The shaolo1/VideoServer repository through 2019-09-21 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+110,CVE-2022-31581,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The scorelab/OpenMF repository before 2022-05-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+111,CVE-2022-31580,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The sanojtharindu/caretakerr-api repository through 2021-05-17 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+112,CVE-2022-31579,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ralphjzhang/iasset repository through 2022-05-04 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+113,CVE-2022-31577,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The longmaoteamtf/audio_aligner_app repository through 2020-01-10 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+114,CVE-2022-31576,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The heidi-luong1109/shackerpanel repository through 2021-05-25 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+115,CVE-2022-31575,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The duducosmos/livro_python repository through 2018-06-06 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+116,CVE-2022-31574,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The deepaliupadhyay/RealEstate repository through 2018-11-30 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+117,CVE-2022-31573,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The chainer/chainerrl-visualizer repository through 0.1.1 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+118,CVE-2022-31572,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ceee-vip/cockybook repository through 2015-04-16 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+119,CVE-2022-31571,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The akashtalole/python-flask-restful-api repository through 2019-09-16 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+120,CVE-2022-31570,22,,Dir. Trav.,2022-07-11,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The adriankoczuruek/ceneo-web-scrapper repository through 2021-03-15 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+121,CVE-2022-31569,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The RipudamanKaushikDal/projects repository through 2022-04-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+122,CVE-2022-31568,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Rexians/rex-web repository through 2022-06-05 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+123,CVE-2022-31567,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The DSABenchmark/DSAB repository through 2.1 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+124,CVE-2022-31565,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The yogson/syrabond repository through 2020-05-25 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+125,CVE-2022-31564,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The woduq1414/munhak-moa repository before 2022-05-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+126,CVE-2022-31563,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The whmacmac/vprj repository through 2022-04-06 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+127,CVE-2022-31562,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The waveyan/internshipsystem repository through 2018-05-22 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+128,CVE-2022-31561,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The varijkapil13/Sphere_ImageBackend repository through 2019-10-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+129,CVE-2022-31560,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The uncleYiba/photo_tag repository through 2020-08-31 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+130,CVE-2022-31559,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The tsileo/flask-yeoman repository through 2013-09-13 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+131,CVE-2022-31558,22,,Dir. Trav.,2022-07-11,2022-07-16,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The tooxie/shiva-server repository through 0.10.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+132,CVE-2022-31557,22,,Dir. Trav.,2022-07-11,2022-07-16,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The seveas/golem repository through 2016-05-17 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+133,CVE-2022-31556,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The rusyasoft/TrainEnergyServer repository through 2017-08-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+134,CVE-2022-31555,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The romain20100/nursequest repository through 2018-02-22 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+135,CVE-2022-31554,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The rohitnayak/movie-review-sentiment-analysis repository through 2017-05-07 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+136,CVE-2022-31553,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The rainsoupah/sleep-learner repository through 2021-02-21 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+137,CVE-2022-31552,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The project-anuvaad/anuvaad-corpus repository through 2020-11-23 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+138,CVE-2022-31551,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The pleomax00/flask-mongo-skel repository through 2012-11-01 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+139,CVE-2022-31550,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The olmax99/pyathenastack repository through 2019-11-08 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+140,CVE-2022-31549,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The olmax99/helm-flask-celery repository before 2022-05-25 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+141,CVE-2022-31548,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The nrlakin/homepage repository through 2017-03-06 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+142,CVE-2022-31547,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The noamezekiel/sphere repository through 2020-05-31 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+143,CVE-2022-31546,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The nlpweb/glance repository through 2014-06-27 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+144,CVE-2022-31545,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ml-inory/ModelConverter repository through 2021-04-26 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+145,CVE-2022-31544,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The meerstein/rbtm repository through 1.5 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+146,CVE-2022-31543,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The maxtortime/SetupBox repository through 1.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+147,CVE-2022-31542,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The mandoku/mdweb repository through 2015-05-07 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+148,CVE-2022-31541,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The lyubolp/Barry-Voice-Assistant repository through 2021-01-18 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+149,CVE-2022-31540,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The kumardeepak/hin-eng-preprocessing repository through 2019-07-16 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+150,CVE-2022-31539,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The kotekan/kotekan repository through 2021.11 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+151,CVE-2022-31538,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The joaopedro-fg/mp-m08-interface repository through 2020-12-10 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+152,CVE-2022-31537,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The jmcginty15/Solar-system-simulator repository through 2021-07-26 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+153,CVE-2022-31536,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The jaygarza1982/ytdl-sync repository through 2021-01-02 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+154,CVE-2022-31535,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The freefood89/Fishtank repository through 2015-06-24 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+155,CVE-2022-31534,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The echoleegroup/PythonWeb repository through 2018-10-31 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+156,CVE-2022-31533,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The decentraminds/umbral repository through 2020-01-15 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+157,CVE-2022-31532,22,,Dir. Trav.,2022-07-11,2022-07-16,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The dankolbman/travel_blahg repository through 2016-01-16 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+158,CVE-2022-31531,22,,Dir. Trav.,2022-07-11,2022-07-16,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The dainst/cilantro repository through 0.0.4 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+159,CVE-2022-31530,22,,Dir. Trav.,2022-07-11,2022-07-16,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The csm-aut/csm repository through 3.5 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+160,CVE-2022-31529,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The cinemaproject/monorepo repository through 2021-03-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+161,CVE-2022-31528,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The bonn-activity-maps/bam_annotation_tool repository through 2021-08-31 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+162,CVE-2022-31527,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Wildog/flask-file-server repository through 2020-02-20 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+163,CVE-2022-31526,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ThundeRatz/ThunderDocs repository through 2020-05-01 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+164,CVE-2022-31525,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The SummaLabs/DLS repository through 0.1.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+165,CVE-2022-31524,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The PureStorage-OpenConnect/swagger repository through 1.1.5 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+166,CVE-2022-31523,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The PaddlePaddle/Anakin repository through 0.1.1 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+167,CVE-2022-31522,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The NotVinay/karaokey repository through 2019-12-11 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+168,CVE-2022-31521,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Niyaz-Mohamed/mosaic repository through 1.0.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+169,CVE-2022-31520,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Luxas98/logstash-management-api repository through 2020-05-04 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+170,CVE-2022-31519,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Lukasavicus/WindMill repository through 1.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+171,CVE-2022-31518,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The JustAnotherSoftwareDeveloper/Python-Recipe-Database repository through 2021-03-31 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+172,CVE-2022-31517,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The HolgerGraef/MSM repository through 2021-04-20 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+173,CVE-2022-31516,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Harveyzyh/Python repository through 2022-05-04 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+174,CVE-2022-31515,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Delor4/CarceresBE repository through 1.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+175,CVE-2022-31514,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Caoyongqi912/Fan_Platform repository through 2021-04-20 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+176,CVE-2022-31513,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The BolunHan/Krypton repository through 2021-06-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+177,CVE-2022-31512,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The Atom02/flask-mvc repository through 2020-09-14 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+178,CVE-2022-31511,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The AFDudley/equanimity repository through 2014-04-23 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+179,CVE-2022-31510,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The sergeKashkin/Simple-RAT repository before 2022-05-03 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+180,CVE-2022-31509,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The iedadata/usap-dc-website repository through 1.0.1 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+181,CVE-2022-31508,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The idayrus/evoting repository before 2022-05-08 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+182,CVE-2022-31507,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ganga-devs/ganga repository before 8.5.10 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+183,CVE-2022-31506,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The cmusatyalab/opendiamond repository through 10.1.1 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+184,CVE-2022-31505,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The cheo0/MercadoEnLineaBack repository through 2022-05-04 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+185,CVE-2022-31504,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ChangeWeDer/BaiduWenkuSpider_flaskWeb repository before 2021-11-29 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+186,CVE-2022-31503,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The orchest/orchest repository before 2022.05.0 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+187,CVE-2022-31502,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The operatorequals/wormnest repository through 0.4.7 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+188,CVE-2022-31501,22,,Dir. Trav.,2022-07-11,2022-07-15,6.4,None,Remote,Low,Not required,Partial,None,"Partial	The ChaoticOnyx/OnyxForum repository before 2022-05-04 on GitHub allows absolute path traversal because the Flask send_file function is used unsafely.
+"
+189,CVE-2022-31211,521,,,2022-07-17,2022-07-25,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	An issue was discovered in Infiray IRAY-A8Z3 1.0.957. There is a blank root password for TELNET by default.
+"
+190,CVE-2022-31210,798,,,2022-07-17,2022-07-25,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	An issue was discovered in Infiray IRAY-A8Z3 1.0.957. The binary file /usr/local/sbin/webproject/set_param.cgi contains hardcoded credentials to the web application. Because these accounts cannot be deactivated or have their passwords changed, they are considered to be backdoor accounts.
+"
+191,CVE-2022-31209,120,,Overflow,2022-07-17,2022-07-25,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	An issue was discovered in Infiray IRAY-A8Z3 1.0.957. The firmware contains a potential buffer overflow by calling strcpy() without checking the string length beforehand.
+"
+192,CVE-2022-31208,,,Exec Code,2022-07-17,2022-07-25,9.0,None,Remote,Low,???,Complete,Complete,"Complete	An issue was discovered in Infiray IRAY-A8Z3 1.0.957. The webserver contains an endpoint that can execute arbitrary commands by manipulating the cmd_string URL parameter.
+"
+193,CVE-2022-31140,209,,DoS,2022-07-11,2022-07-16,6.4,None,Remote,Low,Not required,Partial,None,"Partial	Valinor is a PHP library that helps to map any input into a strongly-typed value object structure. Prior to version 0.12.0, Valinor can use `Throwable#getMessage()` when it should not have permission to do so. This is a problem with cases such as an SQL exception showing an SQL snippet, a database connection exception showing database IP address/username/password, or a timeout detail / out of memory detail. Attackers could use this information for potential data exfiltration, denial of service attacks, enumeration attacks, etc. Version 0.12.0 contains a patch for this vulnerability.
+"
+194,CVE-2022-31138,78,,Exec Code,2022-07-11,2022-07-18,9.0,None,Remote,Low,???,Complete,Complete,"Complete	mailcow is a mailserver suite. Prior to mailcow-dockerized version 2022-06a, an extended privilege vulnerability can be exploited by manipulating the custom parameters regexmess, skipmess, regexflag, delete2foldersonly, delete2foldersbutnot, regextrans2, pipemess, or maxlinelengthcmd to execute arbitrary code. Users should update their mailcow instances with the `update.sh` script in the mailcow root directory to 2022-06a or newer to receive a patch for this issue. As a temporary workaround, the Syncjob ACL can be removed from all mailbox users, preventing changes to those settings.
+"
+195,CVE-2022-31137,78,,Exec Code,2022-07-08,2022-07-26,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. Versions prior to 6.1.1.0 are subject to a remote code execution vulnerability. System commands can be run remotely via the subprocess_execute function without processing the inputs received from the user in the /app/options.py file. Attackers need not be authenticated to exploit this vulnerability. Users are advised to upgrade. There are no known workarounds for this vulnerability.
+"
+196,CVE-2022-31135,129,,DoS,2022-07-07,2022-07-15,7.8,None,Remote,Low,Not required,None,None,"Complete	Akashi is an open source server implementation of the Attorney Online video game based on the Ace Attorney universe. Affected versions of Akashi are subject to a denial of service attack. An attacker can use a specially crafted evidence packet to make an illegal modification, causing a server crash. This can be used to mount a denial-of-service exploit. Users are advised to upgrade. There is no known workaround for this issue.
+"
+197,CVE-2022-31126,74,,Exec Code,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Roxy-wi is an open source web interface for managing Haproxy, Nginx, Apache and Keepalived servers. A vulnerability in Roxy-wi allows a remote, unauthenticated attacker to code execution by sending a specially crafted HTTP request to /app/options.py file. This affects Roxy-wi versions before 6.1.1.0. Users are advised to upgrade. There are no known workarounds for this issue.
+"
+198,CVE-2022-31125,287,,Bypass,2022-07-06,2022-07-14,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Roxy-wi is an open source web interface for managing Haproxy, Nginx, Apache and Keepalived servers. A vulnerability in Roxy-wi allows a remote, unauthenticated attacker to bypass authentication and access admin functionality by sending a specially crafted HTTP request. This affects Roxywi versions before 6.1.1.0. Users are advised to upgrade. There are no known workarounds for this issue.
+"
+199,CVE-2022-30929,732,,,2022-07-06,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Mini-Tmall v1.0 is vulnerable to Insecure Permissions via tomcat-embed-jasper.
+"
+200,CVE-2022-30756,,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Implicit Intent hijacking vulnerability in Finder prior to SMR Jul-2022 Release 1 allow allows attackers to launch certain activities with privilege of Finder.
+"
+201,CVE-2022-30754,,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Implicit Intent hijacking vulnerability in AppLinker prior to SMR Jul-2022 Release 1 allow allows attackers to launch certain activities with privilege of AppLinker.
+"
+202,CVE-2022-30619,89,,Sql,2022-07-06,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Editable SQL Queries behind Base64 encoding sending from the Client-Side to The Server-Side for a particular API used in legacy Work Center module. He attack is available for any authenticated user, in any kind of rule. under the function : /AgilePointServer/Extension/FetchUsingEncodedData in the parameter: EncodedData
+"
+203,CVE-2022-30224,269,,,2022-07-12,2022-07-20,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	Windows Advanced Local Procedure Call Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22037, CVE-2022-30202.
+"
+204,CVE-2022-30220,,,,2022-07-12,2022-07-20,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows Common Log File System Driver Elevation of Privilege Vulnerability.
+"
+205,CVE-2022-30216,434,,,2022-07-12,2022-07-20,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Windows Server Service Tampering Vulnerability.
+"
+206,CVE-2022-30215,,,,2022-07-12,2022-07-20,8.5,None,Remote,Medium,???,Complete,Complete,"Complete	Active Directory Federation Services Elevation of Privilege Vulnerability.
+"
+207,CVE-2022-30214,362,,Exec Code,2022-07-12,2022-07-19,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	Windows DNS Server Remote Code Execution Vulnerability.
+"
+208,CVE-2022-30211,,,Exec Code,2022-07-12,2022-09-22,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	Windows Layer 2 Tunneling Protocol (L2TP) Remote Code Execution Vulnerability.
+"
+209,CVE-2022-30206,,,,2022-07-12,2022-07-20,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows Print Spooler Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22022, CVE-2022-22041, CVE-2022-30226.
+"
+210,CVE-2022-30205,362,,,2022-07-12,2022-07-20,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	Windows Group Policy Elevation of Privilege Vulnerability.
+"
+211,CVE-2022-30202,,,,2022-07-12,2022-07-20,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	Windows Advanced Local Procedure Call Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22037, CVE-2022-30224.
+"
+212,CVE-2022-29884,772,,DoS,2022-07-12,2022-07-19,7.1,None,Remote,Medium,Not required,None,None,"Complete	A vulnerability has been identified in CP-8000 MASTER MODULE WITH I/O -25/+70°C (All versions < CPC80 V16.30), CP-8000 MASTER MODULE WITH I/O -40/+70°C (All versions < CPC80 V16.30), CP-8021 MASTER MODULE (All versions < CPC80 V16.30), CP-8022 MASTER MODULE WITH GPRS (All versions < CPC80 V16.30). When using the HTTPS server under specific conditions, affected devices do not properly free resources. This could allow an unauthenticated remote attacker to put the device into a denial of service condition.
+"
+213,CVE-2022-29601,89,,Sql,2022-07-12,2022-07-19,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The seminars (aka Seminar Manager) extension through 4.1.3 for TYPO3 allows SQL Injection.
+"
+214,CVE-2022-29600,89,,Sql,2022-07-12,2022-07-19,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The oelib (aka One is Enough Library) extension through 4.1.5 for TYPO3 allows SQL Injection.
+"
+215,CVE-2022-29560,77,,,2022-07-12,2022-07-19,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	A vulnerability has been identified in RUGGEDCOM ROX MX5000 (All versions < 2.15.1), RUGGEDCOM ROX MX5000RE (All versions < 2.15.1), RUGGEDCOM ROX RX1400 (All versions < 2.15.1), RUGGEDCOM ROX RX1500 (All versions < 2.15.1), RUGGEDCOM ROX RX1501 (All versions < 2.15.1), RUGGEDCOM ROX RX1510 (All versions < 2.15.1), RUGGEDCOM ROX RX1511 (All versions < 2.15.1), RUGGEDCOM ROX RX1512 (All versions < 2.15.1), RUGGEDCOM ROX RX1524 (All versions < 2.15.1), RUGGEDCOM ROX RX1536 (All versions < 2.15.1), RUGGEDCOM ROX RX5000 (All versions < 2.15.1). Affected devices do not properly validate user input, making them susceptible to command injection. An attacker with access to either the shell or the web CLI with administrator privileges could access the underlying operating system as the root user.
+"
+216,CVE-2022-29187,427,,,2022-07-12,2022-07-29,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	Git is a distributed revision control system. Git prior to versions 2.37.1, 2.36.2, 2.35.4, 2.34.4, 2.33.4, 2.32.3, 2.31.4, and 2.30.5, is vulnerable to privilege escalation in all platforms. An unsuspecting user could still be affected by the issue reported in CVE-2022-24765, for example when navigating as root into a shared tmp directory that is owned by them, but where an attacker could create a git repository. Versions 2.37.1, 2.36.2, 2.35.4, 2.34.4, 2.33.4, 2.32.3, 2.31.4, and 2.30.5 contain a patch for this issue. The simplest way to avoid being affected by the exploit described in the example is to avoid running git as root (or an Administrator in Windows), and if needed to reduce its use to a minimum. While a generic workaround is not possible, a system could be hardened from the exploit described in the example by removing any such repository if it exists already and creating one as root to block any future attacks.
+"
+217,CVE-2022-28935,77,,,2022-07-06,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Totolink A830R V5.9c.4729_B20191112, Totolink A3100R V4.1.2cu.5050_B20200504, Totolink A950RG V4.1.2cu.5161_B20200903, Totolink A800R V4.1.2cu.5137_B20200730, Totolink A3000RU V5.9c.5185_B20201128, Totolink A810R V4.1.2cu.5182_B20201026 were discovered to contain a command injection vulnerability.
+"
+218,CVE-2022-28888,78,,Exec Code,2022-07-13,2022-07-26,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Spryker Commerce OS 1.4.2 allows Remote Command Execution.
+"
+219,CVE-2022-28623,89,,Sql,2022-07-08,2022-07-18,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Security vulnerabilities in HPE IceWall SSO 10.0 certd could be exploited remotely to allow SQL injection or unauthorized data injection. HPE has provided the following updated modules to resolve these vulnerabilities. HPE IceWall SSO version 10.0 certd library Patch 9 for RHEL and HPE IceWall SSO version 10.0 certd library Patch 9 for HP-UX.
+"
+220,CVE-2022-27904,367,,,2022-07-01,2022-07-21,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	Automox Agent for macOS before version 39 was vulnerable to a time-of-check/time-of-use (TOCTOU) race-condition attack during the agent install process.
+"
+221,CVE-2022-26656,,,,2022-07-17,2022-07-18,6.4,None,Remote,Low,Not required,Partial,None,"Partial	Pexip Infinity before 27.3 allows remote attackers to trigger a software abort, and possibly enumerate usernames, via One Touch Join.
+"
+222,CVE-2022-26649,120,,,2022-07-12,2022-07-15,7.8,None,Remote,Low,Not required,None,None,"Complete	A vulnerability has been identified in SCALANCE X200-4P IRT (All versions), SCALANCE X200-4P IRT (All versions), SCALANCE X201-3P IRT (All versions), SCALANCE X201-3P IRT (All versions), SCALANCE X201-3P IRT PRO (All versions), SCALANCE X201-3P IRT PRO (All versions), SCALANCE X202-2IRT (All versions), SCALANCE X202-2IRT (All versions), SCALANCE X202-2P IRT (All versions), SCALANCE X202-2P IRT (All versions), SCALANCE X202-2P IRT PRO (All versions), SCALANCE X202-2P IRT PRO (All versions), SCALANCE X204-2 (All versions < V5.2.6), SCALANCE X204-2FM (All versions < V5.2.6), SCALANCE X204-2LD (All versions < V5.2.6), SCALANCE X204-2LD TS (All versions < V5.2.6), SCALANCE X204-2TS (All versions < V5.2.6), SCALANCE X204IRT (All versions), SCALANCE X204IRT (All versions), SCALANCE X204IRT PRO (All versions), SCALANCE X204IRT PRO (All versions), SCALANCE X206-1 (All versions < V5.2.6), SCALANCE X206-1LD (All versions < V5.2.6), SCALANCE X208 (All versions < V5.2.6), SCALANCE X208PRO (All versions < V5.2.6), SCALANCE X212-2 (All versions < V5.2.6), SCALANCE X212-2LD (All versions < V5.2.6), SCALANCE X216 (All versions < V5.2.6), SCALANCE X224 (All versions < V5.2.6), SCALANCE XF201-3P IRT (All versions), SCALANCE XF202-2P IRT (All versions), SCALANCE XF204 (All versions < V5.2.6), SCALANCE XF204-2 (All versions < V5.2.6), SCALANCE XF204-2BA IRT (All versions), SCALANCE XF204IRT (All versions), SCALANCE XF204IRT (All versions), SCALANCE XF206-1 (All versions < V5.2.6), SCALANCE XF208 (All versions < V5.2.6). Affected devices do not properly validate the URI of incoming HTTP GET requests. This could allow an unauthenticated remote attacker to crash affected devices.
+"
+223,CVE-2022-26648,120,,,2022-07-12,2022-07-15,7.8,None,Remote,Low,Not required,None,None,"Complete	A vulnerability has been identified in SCALANCE X200-4P IRT (All versions), SCALANCE X200-4P IRT (All versions), SCALANCE X201-3P IRT (All versions), SCALANCE X201-3P IRT (All versions), SCALANCE X201-3P IRT PRO (All versions), SCALANCE X201-3P IRT PRO (All versions), SCALANCE X202-2IRT (All versions), SCALANCE X202-2IRT (All versions), SCALANCE X202-2P IRT (All versions), SCALANCE X202-2P IRT (All versions), SCALANCE X202-2P IRT PRO (All versions), SCALANCE X202-2P IRT PRO (All versions), SCALANCE X204-2 (All versions < V5.2.6), SCALANCE X204-2FM (All versions < V5.2.6), SCALANCE X204-2LD (All versions < V5.2.6), SCALANCE X204-2LD TS (All versions < V5.2.6), SCALANCE X204-2TS (All versions < V5.2.6), SCALANCE X204IRT (All versions), SCALANCE X204IRT (All versions), SCALANCE X204IRT PRO (All versions), SCALANCE X204IRT PRO (All versions), SCALANCE X206-1 (All versions < V5.2.6), SCALANCE X206-1LD (All versions < V5.2.6), SCALANCE X208 (All versions < V5.2.6), SCALANCE X208PRO (All versions < V5.2.6), SCALANCE X212-2 (All versions < V5.2.6), SCALANCE X212-2LD (All versions < V5.2.6), SCALANCE X216 (All versions < V5.2.6), SCALANCE X224 (All versions < V5.2.6), SCALANCE XF201-3P IRT (All versions), SCALANCE XF202-2P IRT (All versions), SCALANCE XF204 (All versions < V5.2.6), SCALANCE XF204-2 (All versions < V5.2.6), SCALANCE XF204-2BA IRT (All versions), SCALANCE XF204IRT (All versions), SCALANCE XF204IRT (All versions), SCALANCE XF206-1 (All versions < V5.2.6), SCALANCE XF208 (All versions < V5.2.6). Affected devices do not properly validate the GET parameter XNo of incoming HTTP requests. This could allow an unauthenticated remote attacker to crash affected devices.
+"
+224,CVE-2022-26647,330,,,2022-07-12,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	A vulnerability has been identified in SCALANCE X200-4P IRT (All versions), SCALANCE X200-4P IRT (All versions), SCALANCE X201-3P IRT (All versions), SCALANCE X201-3P IRT (All versions), SCALANCE X201-3P IRT PRO (All versions), SCALANCE X201-3P IRT PRO (All versions), SCALANCE X202-2IRT (All versions), SCALANCE X202-2IRT (All versions), SCALANCE X202-2P IRT (All versions), SCALANCE X202-2P IRT (All versions), SCALANCE X202-2P IRT PRO (All versions), SCALANCE X202-2P IRT PRO (All versions), SCALANCE X204-2 (All versions < V5.2.6), SCALANCE X204-2FM (All versions < V5.2.6), SCALANCE X204-2LD (All versions < V5.2.6), SCALANCE X204-2LD TS (All versions < V5.2.6), SCALANCE X204-2TS (All versions < V5.2.6), SCALANCE X204IRT (All versions), SCALANCE X204IRT (All versions), SCALANCE X204IRT PRO (All versions), SCALANCE X204IRT PRO (All versions), SCALANCE X206-1 (All versions < V5.2.6), SCALANCE X206-1LD (All versions < V5.2.6), SCALANCE X208 (All versions < V5.2.6), SCALANCE X208PRO (All versions < V5.2.6), SCALANCE X212-2 (All versions < V5.2.6), SCALANCE X212-2LD (All versions < V5.2.6), SCALANCE X216 (All versions < V5.2.6), SCALANCE X224 (All versions < V5.2.6), SCALANCE XF201-3P IRT (All versions), SCALANCE XF202-2P IRT (All versions), SCALANCE XF204 (All versions < V5.2.6), SCALANCE XF204-2 (All versions < V5.2.6), SCALANCE XF204-2BA IRT (All versions), SCALANCE XF204IRT (All versions), SCALANCE XF204IRT (All versions), SCALANCE XF206-1 (All versions < V5.2.6), SCALANCE XF208 (All versions < V5.2.6). The webserver of affected devices calculates session ids and nonces in an insecure manner. This could allow an unauthenticated remote attacker to brute-force session ids and hijack existing sessions.
+"
+225,CVE-2022-26352,22,,Exec Code Dir. Trav.,2022-07-17,2022-07-25,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	An issue was discovered in the ContentResource API in dotCMS 3.0 through 22.02. Attackers can craft a multipart form request to post a file whose filename is not initially sanitized. This allows directory traversal, in which the file is saved outside of the intended storage location. If anonymous content creation is enabled, this allows an unauthenticated attacker to upload an executable file, such as a .jsp file, that can lead to remote code execution.
+"
+226,CVE-2022-26078,,,DoS,2022-07-06,2022-07-14,7.8,None,Remote,Low,Not required,None,None,"Complete	Gallagher Controller 6000 is vulnerable to a Denial of Service attack via conflicting ARP packets with a duplicate IP address. This issue affects: Gallagher Gallagher Controller 6000 vCR8.60 versions prior to 220303a; vCR8.50 versions prior to 220303a; vCR8.40 versions prior to 220303a; vCR8.30 versions prior to 220303a.
+"
+227,CVE-2022-25900,78,,,2022-07-01,2022-07-13,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	All versions of package git-clone are vulnerable to Command Injection due to insecure usage of the --upload-pack feature of git.
+"
+228,CVE-2022-25898,347,,,2022-07-01,2022-07-13,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The package jsrsasign before 10.5.25 are vulnerable to Improper Verification of Cryptographic Signature when JWS or JWT signature with non Base64URL encoding special characters or number escaped characters may be validated as valid by mistake. Workaround: Validate JWS or JWT signature if it has Base64URL and dot safe string before executing JWS.verify() or JWS.verifyJWT() method.
+"
+229,CVE-2022-25048,78,,,2022-07-07,2022-07-14,9.0,None,Remote,Low,???,Complete,Complete,"Complete	Command injection vulnerability in CWP v0.9.8.1126 that allows normal users to run commands as the root user.
+"
+230,CVE-2022-25046,22,,Exec Code Dir. Trav.,2022-07-07,2022-07-14,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	A path traversal vulnerability in loader.php of CWP v0.9.8.1122 allows attackers to execute arbitrary code via a crafted POST request.
+"
+231,CVE-2022-24800,362,,Exec Code,2022-07-12,2022-07-20,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	October/System is the system module for October CMS, a self-hosted CMS platform based on the Laravel PHP Framework. Prior to versions 1.0.476, 1.1.12, and 2.2.15, when the developer allows the user to specify their own filename in the `fromData` method, an unauthenticated user can perform remote code execution (RCE) by exploiting a race condition in the temporary storage directory. This vulnerability affects plugins that expose the `October\Rain\Database\Attach\File::fromData` as a public interface and does not affect vanilla installations of October CMS since this method is not exposed or used by the system internally or externally. The issue has been patched in Build 476 (v1.0.476), v1.1.12, and v2.2.15. Those who are unable to upgrade may apply with patch to their installation manually as a workaround.
+"
+232,CVE-2022-24140,494,,Exec Code +Priv,2022-07-06,2022-07-14,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	IOBit Advanced System Care 15, iTop Screen Recorder 2.1, iTop VPN 3.2, Driver Booster 9, and iTop Screenshot sends HTTP requests in their update procedure in order to download a config file. After downloading the config file, the products will parse the HTTP location of the update from the file and will try to install the update automatically with ADMIN privileges. An attacker Intercepting this communication can supply the product a fake config file with malicious locations for the updates thus gaining a remote code execution on an endpoint.
+"
+233,CVE-2022-24139,668,,,2022-07-06,2022-07-15,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	In IOBit Advanced System Care (AscService.exe) 15, an attacker with SEImpersonatePrivilege can create a named pipe with the same name as one of ASCService's named pipes. ASCService first tries to connect before trying to create the named pipes, because of that during login the service will try to connect to the attacker which will lead to either escalation of privileges (through token manipulation and ImpersonateNamedPipeClient() ) from ADMIN -> SYSTEM or from Local ADMIN-> Domain ADMIN depending on the user and named pipe that is used.
+"
+234,CVE-2022-24138,552,,Exec Code +Priv,2022-07-06,2022-07-14,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	IOBit Advanced System Care (Asc.exe) 15 and Action Download Center both download components of IOBit suite into ProgramData folder, ProgramData folder has ""rwx"" permissions for unprivileged users. Low privilege users can use SetOpLock to wait for CreateProcess and switch the genuine component with a malicious executable thus gaining code execution as a high privilege user (Low Privilege -> high integrity ADMIN).
+"
+235,CVE-2022-23714,269,,,2022-07-06,2022-07-14,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	A local privilege escalation (LPE) issue was discovered in the ransomware canaries features of Elastic Endpoint Security for Windows, which could allow unprivileged users to elevate their privileges to those of the LocalSystem account.
+"
+236,CVE-2022-23173,639,,,2022-07-06,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	this vulnerability affect user that even not allowed to access via the web interface. First of all, the attacker needs to access the ""Login menu - demo site"" then he can see in this menu all the functionality of the application. If the attacker will try to click on one of the links, he will get an answer that he is not authorized because he needs to log in with credentials. after he performed log in to the system there are some functionalities that the specific user is not allowed to perform because he was configured with low privileges however all the attacker need to do in order to achieve his goals is to change the value of the prog step parameter from 0 to 1 or more and then the attacker could access to some of the functionality the web application that he couldn't perform it before the parameter changed.
+"
+237,CVE-2022-22997,78,,Exec Code,2022-07-12,2022-07-20,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Addressed a remote code execution vulnerability by resolving a command injection vulnerability and closing an AWS S3 bucket that potentially allowed an attacker to execute unsigned code on My Cloud Home devices.
+"
+238,CVE-2022-22476,290,,,2022-07-08,2022-08-03,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	IBM WebSphere Application Server Liberty 17.0.0.3 through 22.0.0.7 and Open Liberty are vulnerable to identity spoofing by an authenticated user using a specially crafted request. IBM X-Force ID: 225604.
+"
+239,CVE-2022-22463,89,,Sql,2022-07-08,2022-07-16,6.4,None,Remote,Low,Not required,Partial,Partial,"None	IBM Security Access Manager Appliance 10.0.0.0, 10.0.1.0, 10.0.2.0, and 10.0.3.0 is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database. IBM X-Force ID: 225079.
+"
+240,CVE-2022-22050,,,,2022-07-12,2022-07-19,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows Fax Service Elevation of Privilege Vulnerability.
+"
+241,CVE-2022-22049,787,,,2022-07-12,2022-09-28,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows CSRSS Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22026, CVE-2022-22047.
+"
+242,CVE-2022-22048,863,,Bypass,2022-07-12,2022-07-19,6.6,None,Local,Low,Not required,Complete,Complete,"None	BitLocker Security Feature Bypass Vulnerability.
+"
+243,CVE-2022-22047,269,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows CSRSS Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22026, CVE-2022-22049.
+"
+244,CVE-2022-22045,269,,,2022-07-12,2022-07-16,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	Windows.Devices.Picker.dll Elevation of Privilege Vulnerability.
+"
+245,CVE-2022-22043,269,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows Fast FAT File System Driver Elevation of Privilege Vulnerability.
+"
+246,CVE-2022-22041,269,,,2022-07-12,2022-09-22,8.5,None,Remote,Medium,???,Complete,Complete,"Complete	Windows Print Spooler Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22022, CVE-2022-30206, CVE-2022-30226.
+"
+247,CVE-2022-22040,400,,DoS,2022-07-12,2022-07-16,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Internet Information Services Dynamic Compression Module Denial of Service Vulnerability.
+"
+248,CVE-2022-22039,94,,Exec Code,2022-07-12,2022-07-16,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	Windows Network File System Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-22029.
+"
+249,CVE-2022-22038,94,,Exec Code,2022-07-12,2022-07-16,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Remote Procedure Call Runtime Remote Code Execution Vulnerability.
+"
+250,CVE-2022-22037,269,,,2022-07-12,2022-07-16,8.5,None,Remote,Medium,???,Complete,Complete,"Complete	Windows Advanced Local Procedure Call Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-30202, CVE-2022-30224.
+"
+251,CVE-2022-22034,269,,,2022-07-12,2022-07-16,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows Graphics Component Elevation of Privilege Vulnerability.
+"
+252,CVE-2022-22031,269,,,2022-07-12,2022-08-15,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows Credential Guard Domain-joined Public Key Elevation of Privilege Vulnerability.
+"
+253,CVE-2022-22029,94,,Exec Code,2022-07-12,2022-07-16,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Windows Network File System Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-22039.
+"
+254,CVE-2022-22027,94,,Exec Code,2022-07-12,2022-07-16,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Windows Fax Service Remote Code Execution Vulnerability. This CVE ID is unique from CVE-2022-22024.
+"
+255,CVE-2022-22026,787,,,2022-07-12,2022-09-28,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	Windows CSRSS Elevation of Privilege Vulnerability. This CVE ID is unique from CVE-2022-22047, CVE-2022-22049.
+"
+256,CVE-2022-22023,,,Bypass,2022-07-12,2022-07-16,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	Windows Portable Device Enumerator Service Security Feature Bypass Vulnerability.
+"
+257,CVE-2022-21768,787,,,2022-07-06,2022-07-14,8.3,None,Local Network,Low,Not required,Complete,Complete,"Complete	In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06784351; Issue ID: ALPS06784351.
+"
+258,CVE-2022-21767,787,,,2022-07-06,2022-07-14,8.3,None,Local Network,Low,Not required,Complete,Complete,"Complete	In Bluetooth, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS06784430; Issue ID: ALPS06784430.
+"
+259,CVE-2022-21744,787,,Exec Code,2022-07-06,2022-07-14,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	In Modem 2G RR, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution when decoding GPRS Packet Neighbour Cell Data (PNCD) improper neighbouring cell size with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00810064; Issue ID: ALPS06641626.
+"
+260,CVE-2022-20859,863,,,2022-07-06,2022-07-14,9.0,None,Remote,Low,???,Complete,Complete,"Complete	A vulnerability in the Disaster Recovery framework of Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), and Cisco Unity Connection could allow an authenticated, remote attacker to perform certain administrative actions they should not be able to. This vulnerability is due to insufficient access control checks on the affected device. An attacker with read-only privileges could exploit this vulnerability by executing a specific vulnerable command on an affected device. A successful exploit could allow the attacker to perform a set of administrative actions they should not be able to.
+"
+261,CVE-2022-20812,22,,Dir. Trav.,2022-07-06,2022-10-06,8.5,None,Remote,Low,???,None,Complete,"Complete	Multiple vulnerabilities in the API and in the web-based management interface of Cisco Expressway Series and Cisco TelePresence Video Communication Server (VCS) could allow a remote attacker to overwrite arbitrary files or conduct null byte poisoning attacks on an affected device. Note: Cisco Expressway Series refers to the Expressway Control (Expressway-C) device and the Expressway Edge (Expressway-E) device. For more information about these vulnerabilities, see the Details section of this advisory.
+"
+262,CVE-2022-20238,119,,Overflow,2022-07-13,2022-07-26,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	'remap_pfn_range' here may map out of size kernel memory (for example, may map the kernel area), and because the 'vma->vm_page_prot' can also be controlled by userspace, so userspace may map the kernel area to be writable, which is easy to be exploitedProduct: AndroidVersions: Android SoCAndroid ID: A-233154555
+"
+263,CVE-2022-20236,119,,Overflow,2022-07-13,2022-07-25,7.8,None,Remote,Low,Not required,None,None,"Complete	A drm driver have oob problem, could cause the system crash or EOPProduct: AndroidVersions: Android SoCAndroid ID: A-233124709
+"
+264,CVE-2022-20229,787,,Exec Code,2022-07-13,2022-07-26,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	In bta_hf_client_handle_cind_list_item of bta_hf_client_at.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12LAndroid ID: A-224536184
+"
+265,CVE-2022-20223,610,,,2022-07-13,2022-07-26,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	In assertSafeToStartCustomActivity of AppRestrictionsFragment.java, there is a possible way to start a phone call without permissions due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-10 Android-11 Android-12 Android-12LAndroid ID: A-223578534
+"
+266,CVE-2022-20222,787,,Exec Code,2022-07-13,2022-07-25,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	In read_attr_value of gatt_db.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12LAndroid ID: A-228078096
+"
+267,CVE-2022-20220,22,,Dir. Trav. Bypass,2022-07-13,2022-07-25,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	In openFile of CallLogProvider.java, there is a possible permission bypass due to a path traversal error. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-12 Android-12LAndroid ID: A-219015884
+"
+268,CVE-2022-20216,,,,2022-07-13,2022-07-21,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	android exported is used to set third-party app access permissions, and the default value of intent-filter is true. com.sprd.firewall has set exported as true.Product: AndroidVersions: Android SoCAndroid ID: A-231911916
+"
+269,CVE-2022-20083,787,,Exec Code,2022-07-06,2022-07-14,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	In Modem 2G/3G CC, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution when decoding combined FACILITY with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: MOLY00803883; Issue ID: MOLY00803883.
+"
+270,CVE-2022-20082,362,,,2022-07-06,2022-07-14,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	In GPU, there is a possible use after free due to a race condition. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07044730; Issue ID: ALPS07044730.
+"
+271,CVE-2022-2385,,,,2022-07-12,2022-07-19,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	A security issue was discovered in aws-iam-authenticator where an allow-listed IAM identity may be able to modify their username and escalate privileges.
+"
+272,CVE-2022-2368,840,,,2022-07-11,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Business Logic Errors in GitHub repository microweber/microweber prior to 1.2.20.
+"
+273,CVE-2022-2345,416,,,2022-07-08,2022-08-26,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Use After Free in GitHub repository vim/vim prior to 9.0.0046.
+"
+274,CVE-2022-2344,122,,Overflow,2022-07-08,2022-08-21,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0045.
+"
+275,CVE-2022-2343,122,,Overflow,2022-07-08,2022-08-26,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.0044.
+"
+276,CVE-2022-2304,121,,Overflow,2022-07-05,2022-08-26,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Stack-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.
+"
+277,CVE-2022-2302,287,,,2022-07-11,2022-07-18,9.3,None,Remote,Medium,Not required,Complete,Complete,"Complete	Multiple Lenze products of the cabinet series skip the password verification upon second login. After a user has been logged on to the device once, a remote attacker can get full access without knowledge of the password.
+"
+278,CVE-2022-2298,89,,Sql,2022-07-12,2022-07-16,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	A vulnerability has been found in SourceCodester Clinics Patient Management System 2.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file /pms/index.php of the component Login Page. The manipulation of the argument user_name with the input admin' or '1'='1 leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.
+"
+279,CVE-2022-2297,434,,,2022-07-12,2022-07-16,6.5,None,Remote,Low,???,Partial,Partial,"Partial	A vulnerability, which was classified as critical, was found in SourceCodester Clinics Patient Management System 2.0. Affected is an unknown function of the file /pms/update_user.php?user_id=1. The manipulation of the argument profile_picture with the input <?php phpinfo();?> leads to unrestricted upload. It is possible to launch the attack remotely. The exploit has been disclosed to the public and may be used.
+"
+280,CVE-2022-2289,416,,,2022-07-03,2022-08-26,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Use After Free in GitHub repository vim/vim prior to 9.0.
+"
+281,CVE-2022-2288,787,,,2022-07-03,2022-09-01,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.
+"
+282,CVE-2022-2286,125,,,2022-07-02,2022-08-26,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Out-of-bounds Read in GitHub repository vim/vim prior to 9.0.
+"
+283,CVE-2022-2285,190,,Overflow,2022-07-02,2022-09-02,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.
+"
+284,CVE-2022-2284,122,,Overflow,2022-07-02,2022-08-26,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.
+"
+285,CVE-2022-2274,787,,Exec Code Mem. Corr.,2022-07-01,2022-07-15,10.0,None,Remote,Low,Not required,Complete,Complete,"Complete	The OpenSSL 3.0.4 release introduced a serious bug in the RSA implementation for X86_64 CPUs supporting the AVX512IFMA instructions. This issue makes the RSA implementation with 2048 bit private keys incorrect on such machines and memory corruption will happen during the computation. As a consequence of the memory corruption an attacker may be able to trigger a remote code execution on the machine performing the computation. SSL/TLS servers or other servers using 2048 bit RSA private keys running on machines supporting AVX512IFMA instructions of the X86_64 architecture are affected by this issue.
+"
+286,CVE-2022-2268,434,,,2022-07-04,2022-08-01,6.5,None,Remote,Low,???,Partial,Partial,"Partial	The Import any XML or CSV File to WordPress plugin before 3.6.8 accepts all zip files and automatically extracts the zip file without validating the extracted file type. Allowing high privilege users such as admin to upload an arbitrary file like PHP, leading to RCE
+"
+287,CVE-2022-2264,122,,Overflow,2022-07-01,2022-09-01,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.
+"
+288,CVE-2022-2263,89,,Sql,2022-07-12,2022-07-19,6.5,None,Remote,Low,???,Partial,Partial,"Partial	A vulnerability was found in Online Hotel Booking System 1.0 and classified as critical. Affected by this issue is some unknown functionality of the file edit_room_cat.php of the component Room Handler. The manipulation of the argument roomname leads to sql injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used.
+"
+289,CVE-2022-2262,89,,Sql,2022-07-12,2022-07-19,6.5,None,Remote,Low,???,Partial,Partial,"Partial	A vulnerability has been found in Online Hotel Booking System 1.0 and classified as critical. Affected by this vulnerability is an unknown functionality of the file edit_all_room.php of the component Room Handler. The manipulation of the argument id with the input 2828%27%20AND%20(SELECT%203766%20FROM%20(SELECT(SLEEP(5)))BmIK)%20AND%20%27YLPl%27=%27YLPl leads to sql injection. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.
+"
+290,CVE-2022-2253,78,,Exec Code,2022-07-01,2022-07-13,9.0,None,Remote,Low,???,Complete,Complete,"Complete	A user with administrative privileges in Distributed Data Systems WebHMI 4.1.1.7662 may send OS commands to execute on the host server.
+"
+291,CVE-2022-2185,732,,Exec Code,2022-07-01,2022-07-19,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	A critical issue has been discovered in GitLab affecting all versions starting from 14.0 prior to 14.10.5, 15.0 prior to 15.0.4, and 15.1 prior to 15.1.1 where an authenticated user authorized to import projects could import a maliciously crafted project leading to remote code execution.
+"
+292,CVE-2022-1952,434,,Exec Code,2022-07-11,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The Free Booking Plugin for Hotels, Restaurant and Car Rental WordPress plugin before 1.1.16 suffers from insufficient input validation which leads to arbitrary file upload and subsequently to remote code execution. An AJAX action accessible to unauthenticated users is affected by this issue. An allowlist of valid file extensions is defined but is not used during the validation steps.
+"
+293,CVE-2022-1672,352,,CSRF,2022-07-17,2022-07-18,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	The Insights from Google PageSpeed WordPress plugin before 4.0.7 does not verify for CSRF before doing various actions such as deleting Custom URLs, which could allow attackers to make a logged in admin perform such actions via CSRF attacks
+"
+294,CVE-2022-1245,862,,+Priv Bypass,2022-07-08,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	A privilege escalation flaw was found in the token exchange feature of keycloak. Missing authorization allows a client application holding a valid access token to exchange tokens for any target client by passing the client_id of the target. This could allow a client to gain unauthorized access to additional services.
+"
+295,CVE-2022-1057,89,,Sql,2022-07-11,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	The Pricing Deals for WooCommerce WordPress plugin through 2.0.2.02 does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to an unauthenticated SQL injection
+"
+296,CVE-2022-1025,863,,,2022-07-12,2022-07-19,9.0,None,Remote,Low,???,Complete,Complete,"Complete	All unpatched versions of Argo CD starting with v1.0.0 are vulnerable to an improper access control bug, allowing a malicious user to potentially escalate their privileges to admin-level.
+"
+297,CVE-2021-46825,287,,,2022-07-07,2022-07-14,6.4,None,Remote,Low,Not required,Partial,Partial,"None	Symantec Advanced Secure Gateway (ASG) and ProxySG are susceptible to an HTTP desync vulnerability. When a remote unauthenticated attacker and other web clients communicate through the proxy with the same web server, the attacker can send crafted HTTP requests and cause the proxy to forward web server responses to unintended clients. Severity/CVSSv3: High / 8.1 AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N
+"
+298,CVE-2021-46687,668,,,2022-07-06,2022-07-13,6.8,None,Remote,Low,???,Complete,None,"None	JFrog Artifactory prior to version 7.31.10 and 6.23.38 is vulnerable to Sensitive Data Exposure through the Project Administrator REST API. This issue affects: JFrog JFrog Artifactory JFrog Artifactory versions before 7.31.10 versions prior to 7.x; JFrog Artifactory versions before 6.23.38 versions prior to 6.x.
+"
+299,CVE-2021-44915,89,,Sql,2022-07-05,2022-07-13,6.5,None,Remote,Low,???,Partial,Partial,"Partial	Taocms 3.0.2 was discovered to contain a blind SQL injection vulnerability via the function Edit category.
+"
+300,CVE-2021-44222,306,,,2022-07-12,2022-07-15,6.4,None,Remote,Low,Not required,Partial,Partial,"None	A vulnerability has been identified in SIMATIC eaSie Core Package (All versions < V22.00). The underlying MQTT service of affected systems does not perform authentication in the default configuration. This could allow an unauthenticated remote attacker to send arbitrary messages to the service and thereby issue arbitrary requests in the affected system.
+"
+301,CVE-2021-43116,287,,,2022-07-05,2022-07-13,6.5,None,Remote,Low,???,Partial,Partial,"Partial	An Access Control vulnerability exists in Nacos 2.0.3 in the access prompt page; enter username and password, click on login to capture packets and then change the returned package, which lets a malicious user login.
+"
+302,CVE-2021-41037,829,,,2022-07-08,2022-07-15,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	In Eclipse p2, installable units are able to alter the Eclipse Platform installation and the local machine via touchpoints during installation. Those touchpoints can, for example, alter the command-line used to start the application, injecting things like agent or other settings that usually require particular attention in term of security. Although p2 has built-in strategies to ensure artifacts are signed and then to help establish trust, there is no such strategy for the metadata part that does configure such touchpoints. As a result, it's possible to install a unit that will run malicious code during installation without user receiving any warning about this installation step being risky when coming from untrusted source.
+"
+303,CVE-2021-39999,120,,DoS Overflow,2022-07-12,2022-07-15,7.8,None,Remote,Low,Not required,None,None,"Complete	There is a buffer overflow vulnerability in eSE620X vESS V100R001C10SPC200 and V100R001C20SPC200. An attacker can exploit this vulnerability by sending a specific message to the target device due to insufficient validation of packets. Successful exploit could cause a denial of service condition.
+"
+304,CVE-2021-38289,732,,,2022-07-12,2022-07-15,6.5,None,Remote,Low,???,Partial,Partial,"Partial	An issue has been discovered in Novastar-VNNOX-iCare Novaicare 7.16.0 that gives attacker privilege escalation and allows attackers to view corporate information and SMTP server details, delete users, view roles, and other unspecified impacts.
+"
+305,CVE-2021-36666,269,,+Priv,2022-07-12,2022-07-20,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	An issue was discovered in Druva 6.9.0 for MacOS, allows attackers to gain escalated local privileges via the inSyncDecommission.
+"
+306,CVE-2021-36665,502,,+Priv,2022-07-12,2022-07-20,7.2,None,Local,Low,Not required,Complete,Complete,"Complete	An issue was discovered in Druva 6.9.0 for macOS, allows attackers to gain escalated local privileges via the inSyncUpgradeDaemon.
+"
+307,CVE-2021-36461,434,,,2022-07-15,2022-07-19,6.5,None,Remote,Low,???,Partial,Partial,"Partial	An Arbitrary File Upload vulnerability exists in Microweber 1.1.3 that allows attackers to getshell via the Settings Upload Picture section by uploading pictures with malicious code, user.ini.
+"
+308,CVE-2021-35283,89,,Exec Code Sql,2022-07-07,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	SQL Injection vulnerability in product_admin.php in atoms183 CMS 1.0, allows attackers to execute arbitrary commands via the Name, Fname, and ID parameters to search.php.
+"
+309,CVE-2021-32428,89,,Sql,2022-07-01,2022-07-12,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	SQL Injection vulnerability in viaviwebtech Android EBook App (Books App, PDF, ePub, Online Book Reading, Download Books) 10 via the author_id parameter to api.php.
+"
+310,CVE-2021-29281,434,,,2022-07-07,2022-07-15,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	File upload vulnerability in GFI Mail Archiver versions up to and including 15.1 via insecure implementation of Telerik Web UI plugin which is affected by CVE-2014-2217, and CVE-2017-11317.
+"
+311,CVE-2021-24655,639,,,2022-07-17,2022-07-18,6.0,None,Remote,Medium,???,Partial,Partial,"Partial	The WP User Manager WordPress plugin before 2.6.3 does not ensure that the user ID to reset the password of is related to the reset key given. As a result, any authenticated user can reset the password (to an arbitrary value) of any user knowing only their ID, and gain access to their account.
+"
+312,CVE-2021-23163,352,,CSRF,2022-07-06,2022-07-13,6.8,None,Remote,Medium,Not required,Partial,Partial,"Partial	JFrog Artifactory prior to version 7.33.6 and 6.23.38, is vulnerable to CSRF ( Cross-Site Request Forgery) for specific endpoints. This issue affects: JFrog JFrog Artifactory JFrog Artifactory versions before 7.33.6 versions prior to 7.x; JFrog Artifactory versions before 6.23.38 versions prior to 6.x.
+"
+313,CVE-2021-3696,787,,Exec Code,2022-07-06,2022-09-30,6.9,None,Local,Medium,Not required,Complete,Complete,"Complete	A heap out-of-bounds write may heppen during the handling of Huffman tables in the PNG reader. This may lead to data corruption in the heap space. Confidentiality, Integrity and Availablity impact may be considered Low as it's very complex to an attacker control the encoding and positioning of corrupted Huffman entries to achieve results such as arbitrary code execution and/or secure boot circumvention. This flaw affects grub2 versions prior grub-2.12.
+"
+314,CVE-2020-35169,20,,,2022-07-11,2022-10-06,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.5.2, contain an Improper Input Validation Vulnerability.
+"
+315,CVE-2020-35168,,,,2022-07-11,2022-10-06,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.6, contain an Observable Timing Discrepancy Vulnerability.
+"
+316,CVE-2020-35167,,,,2022-07-11,2022-10-06,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.6, contain an Observable Timing Discrepancy Vulnerability.
+"
+317,CVE-2020-35166,,,,2022-07-11,2022-10-06,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.6, contain an Observable Timing Discrepancy Vulnerability.
+"
+318,CVE-2020-35164,,,,2022-07-11,2022-10-06,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.6, contain an Observable Timing Discrepancy Vulnerability.
+"
+319,CVE-2020-35163,330,,,2022-07-11,2022-07-25,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.6, contain a Use of Insufficiently Random Values Vulnerability.
+"
+320,CVE-2020-29508,20,,,2022-07-11,2022-07-25,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.6, contain an Improper Input Validation Vulnerability.
+"
+321,CVE-2020-29507,20,,,2022-07-11,2022-07-25,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.4, and Dell BSAFE Micro Edition Suite, versions before 4.4, contain an Improper Input Validation Vulnerability.
+"
+322,CVE-2020-29506,,,,2022-07-11,2022-07-25,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Dell BSAFE Crypto-C Micro Edition, versions before 4.1.5, and Dell BSAFE Micro Edition Suite, versions before 4.5.2, contain an Observable Timing Discrepancy Vulnerability.
+"
+323,CVE-2020-4150,798,,,2022-07-11,2022-07-18,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	IBM SiteProtector Appliance 3.1.1 contains hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external components, or encryption of internal data. IBM X-Force ID: 174142.
+"
+324,CVE-2017-20138,89,,Sql,2022-07-16,2022-07-19,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	A vulnerability was found in Itech Auction Script 6.49. It has been classified as critical. This affects an unknown part of the file /mcategory.php. The manipulation of the argument mcid with the input 4' AND 1734=1734 AND 'Ggks'='Ggks leads to sql injection (Blind). It is possible to initiate the attack remotely.
+"
+325,CVE-2015-3173,94,,Exec Code,2022-07-06,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	custom-content-type-manager Wordpress plugin can be used by an administrator to achieve arbitrary PHP remote code execution.
+"
+326,CVE-2015-1784,434,,,2022-07-07,2022-07-14,6.5,None,Remote,Low,???,Partial,Partial,"Partial	In nextgen-galery wordpress plugin before 2.0.77.3 there are two vulnerabilities which can allow an attacker to gain full access over the web application. The vulnerabilities lie in how the application validates user uploaded files and lack of security measures preventing unwanted HTTP requests.
+"
+327,CVE-2014-8164,295,,Bypass,2022-07-06,2022-07-14,6.4,None,Remote,Low,Not required,Partial,Partial,"None	A insecure configuration for certificate verification (http.verify_mode = OpenSSL::SSL::VERIFY_NONE) may lead to verification bypass in Red Hat CloudForms 5.x.
+"
+1,CVE-2022-36728,89,,Sql,2022-08-18,2022-08-22,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	Library Management System v1.0 was discovered to contain a SQL injection vulnerability via the RollNo parameter at /staff/delstu.php.
+"
+2,CVE-2022-27255,20,,Exec Code Overflow,2022-08-01,2022-09-30,7.5,None,Remote,Low,Not required,Partial,Partial,"Partial	In Realtek eCos RSDK 1.5.7p1 and MSDK 4.9.4p1, the SIP ALG function that rewrites SDP data has a stack-based buffer overflow. This allows an attacker to remotely execute code without authentication via a crafted SIP packet that contains malicious SDP data.
+"
